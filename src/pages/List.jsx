@@ -1,9 +1,9 @@
-
-
 const List = () => {
   return (
-    <div>List</div>
-  )
-}
+    <div>
+      <p>List</p>
+    </div>
+  );
+};
 
-export default List
+export default List;

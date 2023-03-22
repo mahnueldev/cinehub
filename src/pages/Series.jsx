@@ -1,9 +1,9 @@
-
-
 const Series = () => {
   return (
-    <div>Series</div>
-  )
-}
+    <div>
+      <p>Series</p>
+    </div>
+  );
+};
 
-export default Series
+export default Series;
