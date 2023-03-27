@@ -10,7 +10,7 @@ const Header = () => {
     dispatch(fetchTrending());
   }, [dispatch]);
 
-  const backgroundImageUrl = trending?.[0]?.poster_path;
+  const backgroundImageUrl = trending?.[0]?.poster_path ? `https://image.tmdb.org/t/p/w1280/${trending[0].poster_path}` : '';
   const firstResult = trending?.[0];
   const title = firstResult?.name ?? firstResult?.title ?? '';
   const overview = trending?.[0]?.overview;
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <section
       style={{
-        backgroundImage: `url(https://image.tmdb.org/t/p/w1280${backgroundImageUrl})`,
+        backgroundImage: `url(https://image.tmdb.org/t/p/w1280/${backgroundImageUrl})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         backgroundSize: 'cover',
