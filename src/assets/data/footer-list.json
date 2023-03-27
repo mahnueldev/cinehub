@@ -1,0 +1,58 @@
+{
+    "screen": {
+      "heading": "Screen",
+      "links": [
+        {
+          "title": "Streaming",
+          "url": "/streaming"
+        },
+        {
+          "title": "Premium",
+          "url": "/premium"
+        },
+        {
+          "title": "Marketing",
+          "url": "/marketing"
+        },
+        {
+          "title": "Offline",
+          "url": "/offline"
+        }
+      ]
+    },
+    "about": {
+      "heading": "About",
+      "links": [
+        {
+          "title": "Live",
+          "url": "/live"
+        },
+        {
+          "title": "Our Team",
+          "url": "/team"
+        },
+        {
+          "title": "Careers",
+          "url": "/careers"
+        }
+      ]
+    },
+    "help": {
+      "heading": "Help",
+      "links": [
+        {
+          "title": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "title": "Support",
+          "url": "/support"
+        },
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        }
+      ]
+    }
+  }
+  

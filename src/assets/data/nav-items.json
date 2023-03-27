@@ -1,0 +1,24 @@
+{
+    "navList": {
+      "heading": "nav-lists",
+      "links": [
+        {
+          "title": "Home",
+          "url": "/"
+        },
+        {
+          "title": "Series",
+          "url": "/series"
+        },
+        {
+          "title": "Movies",
+          "url": "/movies"
+        },
+        {
+          "title": "List",
+          "url": "/list"
+        }
+      ]
+    }
+  }
+  

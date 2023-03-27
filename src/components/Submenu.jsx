@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Content from './Content'; // import the component that renders the content
+import MovieCard from './MovieCard'; 
 
 const Submenu = () => {
   const [activeButton, setActiveButton] = useState('Action');
@@ -8,6 +8,7 @@ const Submenu = () => {
     setActiveButton(buttonName);
   }
 
+  
   return (
     <div className='flex flex-col   bg-gray'>
       <ul className='flex items-start py-3 list-none tracking-wide font-extralight space-x-5 ml-12'>
@@ -52,12 +53,12 @@ const Submenu = () => {
           </button>
         </li>
       </ul>
-      <div className="content-container bg-gray-light">
-        {activeButton === 'Action' && <Content type='action' />}
-        {activeButton === 'Adventure' && <Content type='adventure' />}
-        {activeButton === 'Drama' && <Content type='drama' />}
-        {activeButton === 'Horror' && <Content type='horror' />}
-        {activeButton === 'Fantasy' && <Content type='fantasy' />}
+      <div className="content-container bg-gray">
+        {activeButton === 'Action' && <MovieCard type='action' />}
+        {activeButton === 'Adventure' && <MovieCard type='adventure' />}
+        {activeButton === 'Drama' && <MovieCard type='drama' />}
+        {activeButton === 'Horror' && <MovieCard type='horror' />}
+        {activeButton === 'Fantasy' && <MovieCard type='fantasy' />}
       </div>
     </div>
   )

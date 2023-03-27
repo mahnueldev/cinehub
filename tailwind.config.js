@@ -20,9 +20,15 @@ module.exports = {
     
     colors: {
       'red': '#EA1F23',
+      'red-dk': 'hsl(359,83%,42%)',
       'gray': '#303230',
       'gray-light': '#d3dce6',
-      'white': '#fff'
+      'white': '#fff',
+      'yellow': '#f5c901',
+      'green': '#b1ff05',
+      'black-opq': 'rgb(24,24,24, .2)',
+      'black-opq2': 'rgb(24,24,24, .7)'
+      
     },
     fontFamily: {
       sans: ['Asap'],
@@ -35,7 +41,7 @@ module.exports = {
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
-      '5xl': '6.052rem',
+      '5xl': '5.052rem',
     },
   },
   plugins: [],

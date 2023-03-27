@@ -1,8 +1,13 @@
 
 
-const Button = () => {
+const Button = ({ backgroundColor, text }) => {
   return (
-    <button className='rounded-md bg-red px-8 py-2 text-white'>Click me</button>
+    <button
+      className='rounded-md px-8 py-2 text-white'
+      style={{ backgroundColor: backgroundColor }}
+    >
+      {text}
+    </button>
   )
 }
 

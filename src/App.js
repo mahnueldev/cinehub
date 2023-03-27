@@ -1,3 +1,4 @@
+import './app.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from '../src/components';
 import { Home, Series, Movies, List } from '../src/pages/index';
