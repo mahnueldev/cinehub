@@ -8,14 +8,27 @@ import Loader from './Loader';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 const TrendCard = () => {
-  const { trending} = useSelector((state) => state.tmbd);
+  const { trending, loading, error } = useSelector((state) => state.tmbd);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchTrending());
   }, [dispatch]);
 
-  
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <div className='flex justify-center items-center m-12'>
+        <p className='p-4 text-red bg-white border rounded-2xl'>
+          Cannot get info at this time
+        </p>
+        ;
+      </div>
+    );
+  }
   return (
     <section className=' bg-gradient-to-r from-black-opq2 to-gray'>
       <div className='text-white pl-10 pt-10  '>
