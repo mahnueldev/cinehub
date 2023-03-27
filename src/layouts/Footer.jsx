@@ -16,7 +16,7 @@ const Footer = () => {
           <ul>
             {data[objKey].links.map((link) => (
               <li key={link.title}>
-                <a href={link.url} className='text-base'>{link.title}</a>
+                <a href={link.url} className='text-base font-thin'>{link.title}</a>
               </li>
             ))}
           </ul>
