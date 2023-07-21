@@ -10,8 +10,8 @@ const Submenu = () => {
 
   
   return (
-    <div className='flex flex-col   bg-gray'>
-      <ul className='flex items-start py-3 list-none tracking-wide font-extralight space-x-5 ml-12'>
+    <div className='flex flex-col bg-gray'>
+      <ul className='flex items-start py-3 list-none tracking-wide font-extralight space-x-5 xl:ml-12 sm:ml-2'>
         <li className='mr-3'>
           <button
             className={`text-white hover:text-red ${activeButton === 'Action' ? 'font-bold' : ''}`}

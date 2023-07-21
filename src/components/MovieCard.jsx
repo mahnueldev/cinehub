@@ -32,6 +32,7 @@ const MovieCard = () => {
   useEffect(() => {
     setShowBackgroundImage(true);
   }, [activeSlideIndex]);
+
   if (loading) {
     return <Loader />;
   }
@@ -48,10 +49,10 @@ const MovieCard = () => {
   }
 
   return (
-    <section className='flex-auto '>
+    <section className='flex-auto'>
       <Swiper
         loop={true}
-        slidesPerView={5}
+        slidesPerView={1} // Show one slide at a time on mobile
         navigation={{
           prevEl: 'swiper-button-prev',
           nextEl: 'swiper-button-next',
@@ -66,7 +67,7 @@ const MovieCard = () => {
         {movies.map((movie, index) => (
           <SwiperSlide key={movie.id}>
             <section
-              className='p-28  w-screen transition duration-75 ease-in-out justify-center items-center'
+              className='p-28 w-screen transition duration-75 ease-in-out justify-center items-center'
               style={{
                 backgroundImage:
                   index === activeSlideIndex
@@ -75,13 +76,10 @@ const MovieCard = () => {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
                 backgroundSize: 'cover',
-
-                //   opacity: index === activeSlideIndex ? 1 : 0,
-                //   transition: 'opacity 1s ease-in-out',
               }}
             >
               {index === activeSlideIndex && (
-                <div className='absolute inset-0 bg-gradient-to-r from-black-opq to-gray w-screen transition duration-75 ease-in-out '></div>
+                <div className='absolute inset-0 bg-gradient-to-r from-black-opq to-gray w-screen transition duration-75 ease-in-out'></div>
               )}
 
               {index === activeSlideIndex && (
@@ -94,7 +92,7 @@ const MovieCard = () => {
                   <CircleGuage value={movie.vote_average} maxvalue={10} />
                 </div>
               )}
-              <div className='flex z-10  '>
+              <div className='flex z-10'>
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                   alt={movie.title}
@@ -110,11 +108,6 @@ const MovieCard = () => {
             </section>
           </SwiperSlide>
         ))}
-        {/* <div className='slider-controler w-18'>
-                <span className='swiper-button-prev'>prev</span>
-                <span className='swiper-button-next'>next</span>
-              </div>
-              <div className='swiper-pagination'></div> */}
       </Swiper>
     </section>
   );

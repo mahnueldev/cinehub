@@ -4,7 +4,7 @@ import { Button } from '../components';
 
 const Footer = () => {
   return (
-    <main className='p-32 flex justify-between bg-gradient-to-r from-red-dk to-red'>
+    <main className='p-32 xl:flex sm:flex-col sm:space-y-8 justify-between  bg-gradient-to-r from-red-dk to-red'>
         <section className='space-y-8'>
             <h2 className='text-white'>Ready to get started?</h2>
             <Button text='Subscribe' backgroundColor={'#303230'}/>

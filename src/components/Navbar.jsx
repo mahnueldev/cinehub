@@ -58,7 +58,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className='flex fixed w-screen z-10 items-center justify-between px-4 py-3 bg-gray'>
+    <nav className='flex fixed w-screen z-10 items-center justify-between px-10 py-3  bg-gray'>
       {webView}
       {mobileView}
 
