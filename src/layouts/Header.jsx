@@ -26,11 +26,11 @@ const Header = () => {
       }}
       className=' h-screen'
     >
-      <div className='bg-gradient-to-r from-gray to-red-opacity-100-transparenth h-full px-28 flex-col items-center pt-28 '>
+      <div className='bg-gradient-to-r from-gray to-red-opacity-100-transparenth h-full md:px-28 sm:px-10 flex-col items-center pt-28 '>
         <div className='mt-10'>
           <Tags text='Trending' />
-          <h1 className='text-5xl text-white '>{title}</h1>
-          <p className='text-white font-light text-xl mr-96 pr-96 mb-8'>
+          <h1 className='md:text-5xl  sm:text-3xl text-white '>{title}</h1>
+          <p className='text-white font-light md:text-base xl:mr-96 md:mr-24 md:pr-96 sm:pr-24 mb-8 sm:text-sm'>
             {overview}
           </p>
           <Button text='Play' backgroundColor={'red'}/>
